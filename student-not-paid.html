@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student-not-paid.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Feezee</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentLinkButton = document.querySelector('button[type="submit"]');
+
+            paymentLinkButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default button behavior
+
+                // Open Razorpay in a new tab
+                window.open('https://razorpay.com/', '_blank');
+
+                // Redirect the current page to student-paid.html
+                window.location.href = 'student-paid.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <div class="contt">
+                <div>
+                    <a href=""><img src="feezee.png" alt="Feezee"></a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="contt">
+                <div>
+                    <a href=""><img src="white.jpg" alt="Profile Picture" class="imm"></a>
+                </div>
+                <div class="log">
+                    Aishwarya M G<br>Student
+                </div>
+            </div>
+        </div>
+        <div style="padding: 400px 0px 0px 0px;">
+            <div class="contt">
+                <div>
+                    <a href=""><img src="rvu.png" alt="RVU Logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="tui">Tuition Fee</div>
+        <div class="fle">
+            <div class="item1 item">
+                <div>Status: <span style="color: red;">NOT PAID</span></div>
+                <div>Deadline: <span style="color: red;">31-05-2024</span></div>
+                <div style="color: red; margin-top: 10px;">A fee of Rs. 1000 per day will be applicable after the due date</div>
+                <div style="padding-top: 10px;">
+                    <button type="submit">Payment Link</button>
+                </div>
+            </div>
+            <div class="item2 item">
+                Tuition Fee Breakdown
+            </div>
+            <div class="item3 item">
+                <div>Exam Eligibility: <span style="color: red;">NOT ELIGIBLE</span></div>
+                <div>Hall Ticket Status: <span style="color: red;">NOT ISSUED</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

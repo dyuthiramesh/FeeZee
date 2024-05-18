@@ -1,0 +1,98 @@
+.sidebar {
+    margin: 0;
+    width: 600px;
+    background-color: #6b8fc3;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    bottom: 0;
+  }
+  div.content {
+    margin-left: 650px;
+    padding: 30px;
+    height: 700px;
+  }
+  .contt{
+    color: white;
+    font-size: 13px;
+  }
+img{
+    width: 40%;
+}
+.imm{
+    height: 110px;
+    width: 110px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 20px;
+}
+.log{
+    padding: 20px 0px;
+    margin-left: 125px;
+}
+.log1{
+    padding: 20px 0px;
+    margin-left: 140px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.wr{
+    display: flex;
+    flex-wrap: wrap;
+}
+.li{
+    font-weight: 1000;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 90px;
+}
+.lin{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+.st{
+    width: 85%;
+}
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: black;
+    color: white;
+    padding: 16px 26px;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+.in{
+    text-align: center;
+}
+.in button{
+    border-radius: 10px;
+}
+.in input{
+    border-radius: 10px;
+}
